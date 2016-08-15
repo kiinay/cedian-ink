@@ -1,0 +1,2 @@
+@media all and (max-width: 400px){#container #header,#container footer{text-align:center;color:#fff;background-color:#000}#container #header{height:100px}#container #content{width:100%}#container #content section{width:100%}#container #content section .photo:first-child{display:block;float:left;box-sizing:border-box;width:50%}#container #content section .photo img{width:100px}}
+/*# sourceMappingURL=mq-styles.css.map */
