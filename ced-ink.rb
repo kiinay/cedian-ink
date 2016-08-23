@@ -13,3 +13,7 @@ end
 get '/' do
   haml :home
 end
+
+get '/show' do
+  haml :show
+end

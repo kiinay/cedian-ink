@@ -1,0 +1,33 @@
+%head
+  %meta{ charset: :'utf-8' }
+  %link{ rel: :stylesheet, type: :'text/css', href: :'./stylesheets/mq-styles.css' }
+  %link{ rel: :stylesheet, type: :'text/css', href: :'./stylesheets/styles.css' }
+  %title
+    CedInk
+
+%body
+  #container
+    #header
+      %h1
+        = link_to('CED INK', url('/'))
+
+    #show
+      %h1
+        Je suis la vu show !
+
+      %section
+        .photo
+          = img_tag('tatoo3.jpg', 'yeah')
+        .photo
+          = img_tag('croquis3.jpg', 'yeah')
+        .legend
+          %p
+            Genre tatoo
+            %br
+            Style
+      .description
+        %p
+          Lorem ipsum dolor sit amet, consectetur
+    %footer
+      %p
+        Je suis le footer

@@ -9,17 +9,87 @@
   #container
     #header
       %h1
-        CED INK
+        = link_to('CED INK', url('/'))
 
-    #content
+    #home
       %h1
         Hello World !!!
 
       %section
         .photo
-          = img_tag('yeah.jpg', 'yeah')
+          = link_to(img_tag('tatoo3.jpg', 'yeah'), url('/show'))
+          .legend
+            %p
+              Genre tatoo
+              %br
+              Style
         .photo
-          = img_tag('yeah.jpg', 'yeah')
+          = link_to(img_tag('croquis3.jpg', 'yeah'), url('/show'))
+          .legend
+            %p
+              Genre tatoo
+              %br
+              Style
+      %section
+        .photo
+          = link_to(img_tag('tatoo1.jpg', 'yeah'), url('/show'))
+          .legend
+            %p
+              Genre tatoo
+              %br
+              Style
+        .photo
+          = link_to(img_tag('tatoo1.jpg', 'yeah'), url('/show'))
+          .legend
+            %p
+              Genre tatoo
+              %br
+              Style
+      %section
+        .photo
+          = link_to(img_tag('tatoo4.jpg', 'yeah'), url('/show'))
+          .legend
+            %p
+              Genre tatoo
+              %br
+              Style
+        .photo
+          = link_to(img_tag('croquis4.jpg', 'yeah'), url('/show'))
+          .legend
+            %p
+              Genre tatoo
+              %br
+              Style
+      %section
+        .photo
+          = link_to(img_tag('tatoo2.jpg', 'yeah'), url('/show'))
+          .legend
+            %p
+              Genre tatoo
+              %br
+              Style
+        .photo
+          = link_to(img_tag('tatoo2.jpg', 'yeah'), url('/show'))
+          .legend
+            %p
+              Genre tatoo
+              %br
+              Style
+      %section
+        .photo
+          = link_to(img_tag('tatoo5.jpg', 'yeah'), url('/show'))
+          .legend
+            %p
+              Genre tatoo
+              %br
+              Style
+        .photo
+          = link_to(img_tag('croquis5.jpg', 'yeah'), url('/show'))
+          .legend
+            %p
+              Genre tatoo
+              %br
+              Style
 
     %footer
       %p
