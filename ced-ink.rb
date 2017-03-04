@@ -17,3 +17,7 @@ end
 get '/show' do
   haml :show
 end
+
+get '/contact' do
+  haml :contact
+end

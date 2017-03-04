@@ -1,0 +1,5 @@
+#ignore sass-cache
+/.sass-cache/
+
+# ignore git-loglive
+/git-loglive

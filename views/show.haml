@@ -3,13 +3,21 @@
   %link{ rel: :stylesheet, type: :'text/css', href: :'./stylesheets/mq-styles.css' }
   %link{ rel: :stylesheet, type: :'text/css', href: :'./stylesheets/styles.css' }
   %title
-    CedInk
+    CedInk - {Show}
 
 %body
   #container
     #header
       %h1
         = link_to('CED INK', url('/'))
+      %nav
+        %ul
+          %li
+            = link_to('Home', url('/'))
+          %li
+            = link_to('Show', url('/show'))
+          %li
+            = link_to('Contact', url('/contact'))
 
     #show
       %h1
@@ -28,6 +36,7 @@
       .description
         %p
           Lorem ipsum dolor sit amet, consectetur
+
     %footer
       %p
         Je suis le footer
