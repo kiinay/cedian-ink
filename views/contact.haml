@@ -1,47 +1,22 @@
-%head
-  %meta{ charset: :'utf-8' }
-  %link{ rel: :stylesheet, type: :'text/css', href: :'./stylesheets/mq-styles.css' }
-  %link{ rel: :stylesheet, type: :'text/css', href: :'./stylesheets/styles.css' }
-  %title
-    CedInk - Contact
+#contact
+  %h1
+    Contact
 
-%body
-  #container
-    #header
-      %h1
-        = link_to('CED INK', url('/'))
-      %nav
-        %ul
-          %li
-            = link_to('Home', url('/'))
-          %li
-            = link_to('Show', url('/show'))
-          %li
-            = link_to('Contact', url('/contact'))
+  #googleMap
+    %iframe{:allowfullscreen => "", :frameborder => "0", :height => "300", :src => "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20945.543731275982!2d2.205976435103068!3d48.98788512521126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66719b058011f%3A0x40b82c3688b32e0!2s95130+Franconville!5e0!3m2!1sfr!2sfr!4v1472063557181", :style => "border:0", :width => "100%"}
 
-    #contact
-      %h1
-        Contact
+  #infos
+    %adress
+      10 rue de je suis la, FRANCONVILLE 95130
+    %p
+      = link_to('06 06 06 06 06', url('tel:0606060606'))
+    %p
+      = link_to('you.tatoo@tatoo.com', url('mailto:you.tatoo@tatoo.com'))
 
-      #googleMap
-        %iframe{:allowfullscreen => "", :frameborder => "0", :height => "300", :src => "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20945.543731275982!2d2.205976435103068!3d48.98788512521126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66719b058011f%3A0x40b82c3688b32e0!2s95130+Franconville!5e0!3m2!1sfr!2sfr!4v1472063557181", :style => "border:0", :width => "100%"}
-
-      #infos
-        %adress
-          10 rue de je suis la, FRANCONVILLE 95130
-        %p
-          = link_to('06 06 06 06 06', url('tel:0606060606'))
-        %p
-          = link_to('you.tatoo@tatoo.com', url('mailto:you.tatoo@tatoo.com'))
-
-      #socials
-        %p
-          = link_to('facebook', url('https://www.facebook.com/profile.php?id=100009442494875&fref=ts'))
-        %p
-          twitter
-        %p
-          snapchat
-
-    %footer
-      %p
-        Je suis le footer
+  #socials
+    %p
+      = link_to('facebook', url('https://www.facebook.com/profile.php?id=100009442494875&fref=ts'))
+    %p
+      Twitter
+    %p
+      Snapchat

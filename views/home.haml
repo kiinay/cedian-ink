@@ -1,104 +1,79 @@
-%head
-  %meta{ charset: :'utf-8' }
-  %link{ rel: :stylesheet, type: :'text/css', href: :'./stylesheets/mq-styles.css' }
-  %link{ rel: :stylesheet, type: :'text/css', href: :'./stylesheets/styles.css' }
-  %title
-    CedInk
+#home
+  %h1
+    Hello World !!!
 
-%body
-  #container
-    #header
-      %h1
-        = link_to('CED INK', url('/'))
-      %nav
-        %ul
-          %li
-            = link_to('Home', url('/'))
-          %li
-            = link_to('Show', url('/show'))
-          %li
-            = link_to('Contact', url('/contact'))
-
-    #home
-      %h1
-        Hello World !!!
-
-      %section
-        .photo
-          = link_to(img_tag('tatoo3.jpg', 'yeah'), url('/show'))
-          .legend
-            %p
-              Genre tatoo
-              %br
-              Style
-        .photo
-          = link_to(img_tag('croquis3.jpg', 'yeah'), url('/show'))
-          .legend
-            %p
-              Genre tatoo
-              %br
-              Style
-      %section
-        .photo
-          = link_to(img_tag('tatoo1.jpg', 'yeah'), url('/show'))
-          .legend
-            %p
-              Genre tatoo
-              %br
-              Style
-        .photo
-          = link_to(img_tag('tatoo1.jpg', 'yeah'), url('/show'))
-          .legend
-            %p
-              Genre tatoo
-              %br
-              Style
-      %section
-        .photo
-          = link_to(img_tag('tatoo4.jpg', 'yeah'), url('/show'))
-          .legend
-            %p
-              Genre tatoo
-              %br
-              Style
-        .photo
-          = link_to(img_tag('croquis4.jpg', 'yeah'), url('/show'))
-          .legend
-            %p
-              Genre tatoo
-              %br
-              Style
-      %section
-        .photo
-          = link_to(img_tag('tatoo2.jpg', 'yeah'), url('/show'))
-          .legend
-            %p
-              Genre tatoo
-              %br
-              Style
-        .photo
-          = link_to(img_tag('tatoo2.jpg', 'yeah'), url('/show'))
-          .legend
-            %p
-              Genre tatoo
-              %br
-              Style
-      %section
-        .photo
-          = link_to(img_tag('tatoo5.jpg', 'yeah'), url('/show'))
-          .legend
-            %p
-              Genre tatoo
-              %br
-              Style
-        .photo
-          = link_to(img_tag('croquis5.jpg', 'yeah'), url('/show'))
-          .legend
-            %p
-              Genre tatoo
-              %br
-              Style
-
-    %footer
-      %p
-        Je suis le footer
+  %section
+    .photo
+      = link_to(img_tag('tatoo3.jpg', 'yeah'), url('/show'))
+      .legend
+        %p
+          Genre tatoo
+          %br
+          Style
+    .photo
+      = link_to(img_tag('croquis3.jpg', 'yeah'), url('/show'))
+      .legend
+        %p
+          Genre tatoo
+          %br
+          Style
+  %section
+    .photo
+      = link_to(img_tag('tatoo1.jpg', 'yeah'), url('/show'))
+      .legend
+        %p
+          Genre tatoo
+          %br
+          Style
+    .photo
+      = link_to(img_tag('tatoo1.jpg', 'yeah'), url('/show'))
+      .legend
+        %p
+          Genre tatoo
+          %br
+          Style
+  %section
+    .photo
+      = link_to(img_tag('tatoo4.jpg', 'yeah'), url('/show'))
+      .legend
+        %p
+          Genre tatoo
+          %br
+          Style
+    .photo
+      = link_to(img_tag('croquis4.jpg', 'yeah'), url('/show'))
+      .legend
+        %p
+          Genre tatoo
+          %br
+          Style
+  %section
+    .photo
+      = link_to(img_tag('tatoo2.jpg', 'yeah'), url('/show'))
+      .legend
+        %p
+          Genre tatoo
+          %br
+          Style
+    .photo
+      = link_to(img_tag('tatoo2.jpg', 'yeah'), url('/show'))
+      .legend
+        %p
+          Genre tatoo
+          %br
+          Style
+  %section
+    .photo
+      = link_to(img_tag('tatoo5.jpg', 'yeah'), url('/show'))
+      .legend
+        %p
+          Genre tatoo
+          %br
+          Style
+    .photo
+      = link_to(img_tag('croquis5.jpg', 'yeah'), url('/show'))
+      .legend
+        %p
+          Genre tatoo
+          %br
+          Style

@@ -6,7 +6,7 @@ helpers do
   end
 
   def link_to(content, link, *option)
-    "<a href='#{link}' #{option}>#{content}</a>"
+    "<a href='#{link}' #{option[0]}>#{content}</a>"
   end
 end
 
