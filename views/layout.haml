@@ -2,6 +2,7 @@
   %meta{ charset: :'utf-8' }
   %link{ rel: :stylesheet, type: :'text/css', href: :'./stylesheets/mq-styles.css' }
   %link{ rel: :stylesheet, type: :'text/css', href: :'./stylesheets/styles.css' }
+  %link{ rel: :stylesheet, type: :'text/css', href: :'./stylesheets/menu.css' }
   %title
     CedInk
 
@@ -11,17 +12,30 @@
       %h1
         = link_to('CED INK', url('/'))
 
-      %nav
-        %ul
-          %li
-            = link_to('Home', url('/'))
-          %li
-            = link_to('Show', url('/show'))
-          %li
-            = link_to('Contact', url('/contact'))
+      %button.open_menu
+        &larr; Menu
 
-    = yield
+    %nav#menu-slide-left
+      %button.close_menu
+        &larr; Close Menu
+      %ul
+        %li
+          = link_to('Home', url('#'), "class='c-menu__link'")
+        %li
+          = link_to('About', url('#'), "class='c-menu__link'")
+        %li
+          = link_to('Services', url('#'), "class='c-menu__link'")
+        %li
+          = link_to('Work', url('#'), "class='c-menu__link'")
+        %li
+          = link_to('Contact', url('#'), "class='c-menu__link'")
+
+    #contain
+      = yield
 
     %footer
       %p
         Je suis le footer
+
+%script{ src: 'https://code.jquery.com/jquery-3.1.1.min.js', integrity: 'sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=', crossorigin: 'anonymous' }
+%script{ src: './javascripts/menu.js' }

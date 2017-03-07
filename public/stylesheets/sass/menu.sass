@@ -1,0 +1,14 @@
+body
+  #menu-slide-left
+    width: 50%
+    height: 100%
+    left: -50%
+    position: fixed
+    opacity: 0
+    background-color: red
+    transition: 1s left, 1s width, 1s opacity
+    &.active
+      left: 0
+      opacity: 1
+      background-color: red
+      transition: 1s left, 1s width, 1s opacity
